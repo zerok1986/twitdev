@@ -1,5 +1,18 @@
-.container a {
+.background {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.background a {
   text-decoration: none;
+}
+
+.container {
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+  height: 100%;
+  width: 100%;
 }
 
 .title {
@@ -10,4 +23,11 @@
 .nav {
   font-size: 24px;
   text-align: center;
+}
+
+@media (min-width: 550px) {
+  .container {
+    height: 90vh;
+    width: 500px;
+  }
 }

@@ -1,13 +1,24 @@
+:root {
+  --primary: #0099ff;
+  --secondary: #1c5480;
+  --translucid: rgba(0, 153, 255, .3)
+}
+
 html,
 body {
-  padding: 2px;
-  margin: 4px;
+  background-image:
+    radial-gradient(var(--translucid) 1px, transparent 1px),
+    radial-gradient(var(--translucid) 1px, transparent 1px);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+  padding: 0px;
+  margin: 0px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 h1 {
-  color: #09f;
+  color: var(--primary);
 }
 
 a {
@@ -19,12 +30,9 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+    color-scheme: light;
   }
 }
+
